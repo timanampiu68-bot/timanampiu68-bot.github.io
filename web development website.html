@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Self Understanding Website</h1>
+
+<form id="analysisForm">
+    <input type="text" id="name" placeholder="Your Name" required><br>
+
+    <input type="number" id="age" placeholder="Your Age" required><br>
+
+    <select id="mood">
+        <option value="">Your Current Mood</option>
+        <option value="happy">Happy</option>
+        <option value="stressed">Stressed</option>
+        <option value="sad">Sad</option>
+        <option value="motivated">Motivated</option>
+    </select><br>
+
+    <textarea id="strength" placeholder="Your main strength"></textarea><br>
+    <textarea id="weakness" placeholder="Your main weakness"></textarea><br>
+
+    <button type="button" onclick="analyze()">Analyze Me</button>
+</form>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
